@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Topic_List">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/topiclist_adview_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        app:adSize="BANNER"
+        app:adUnitId="@string/DailyNews_Banner_Top" />
+
+    <ListView
+        android:id="@+id/topiclist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="567dp">
+
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/topiclist_ad_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/topiclist_adview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        app:adSize="BANNER"
+        app:adUnitId="@string/DailyNews_Banner_Bottom"/>
+
+</LinearLayout>
